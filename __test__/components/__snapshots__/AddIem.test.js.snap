@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AddItem/> matches the snapshot 1`] = `
+<div>
+  <fieldset>
+    <label
+      htmlFor="title"
+    >
+      Name:
+      <input
+        id="title"
+        name="title"
+        onChange={[Function]}
+        placeholder="Enter the name of the drink"
+        required={true}
+        type="text"
+        value="熟成紅茶"
+      />
+    </label>
+    <label
+      htmlFor="price"
+    >
+      Price
+      <input
+        id="price"
+        name="price"
+        onChange={[Function]}
+        placeholder="Price"
+        required={true}
+        type="number"
+        value={20}
+      />
+    </label>
+    <label
+      htmlFor="notes"
+    >
+      Notes
+      <textarea
+        cols="30"
+        id="notes"
+        name="notes"
+        onChange={[Function]}
+        placeholder="Enter some additional notes"
+        required={true}
+        rows="10"
+        value="微糖微冰"
+      />
+    </label>
+    <button
+      onClick={[Function]}
+    >
+      Submit
+    </button>
+  </fieldset>
+</div>
+`;

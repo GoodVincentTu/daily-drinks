@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DeleteButton/> matches the snapshot 1`] = `
+<Fragment>
+  <span
+    onClick={[Function]}
+  >
+    ×
+  </span>
+</Fragment>
+`;
