@@ -12,3 +12,7 @@
 3. Running test
 > $ yarn test
     Using jest and enzyme to do the end to end testing ensuring the usability and maintainability.
+
+### Todos
+[] 1. Style components implementation
+[] 2. Testing implementation
