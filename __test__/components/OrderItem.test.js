@@ -4,7 +4,7 @@ import OrderItem from '../../src/components/OrderItem';
 
 const fakeDrink = {
   title: '熟成紅茶',
-  price: '$20',
+  price: 20,
   notes: '微糖微冰'
 };
 
