@@ -16,7 +16,7 @@ class AddItem extends React.Component {
   handleClick = e => {
     e.preventDefault();
     const itemObj = {...this.state};
-    this.props.handleItems(itemObj);
+    this.props.handleAddItems(itemObj);
   }
 
   render() {

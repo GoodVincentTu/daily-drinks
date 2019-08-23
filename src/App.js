@@ -12,7 +12,7 @@ class App extends React.Component{
     }]
   }
 
-  handleItems = (itemObj) => {
+  handleAddItems = (itemObj) => {
     const {title, price, notes} = {...itemObj};
     if(!title || !price || !notes) return alert('Please fill the name, price, and notes');
     const newAry = [...this.state.drinks];
@@ -20,11 +20,19 @@ class App extends React.Component{
     this.setState({drinks: newAry});
   }
 
+  hadnleDeleteItems = (inputIndex) => {
+    const newAry = [...this.state.drinks];
+    const returnAry = newAry.filter((drink, index) => { return index !== inputIndex})
+    this.setState({drinks: returnAry});
+  }
+
   render() {
     return (
       <div className="App">
-        <AddItem handleItems={this.handleItems} />
-        <OrderList drinks={this.state.drinks} />
+        <AddItem handleAddItems={this.handleAddItems} />
+        <OrderList 
+          drinks={this.state.drinks}
+          hadnleDeleteItems={this.hadnleDeleteItems} />
       </div>
     );
   }
